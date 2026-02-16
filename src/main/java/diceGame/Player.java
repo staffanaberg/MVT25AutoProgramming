@@ -3,18 +3,25 @@ package diceGame;
 public class Player {
 
 
-    //private datatyp variabelnamn;
-    private String name;
 
-    //public klassNamne(parameter) {
-    //    this.attribut = parameter;
-    //}
+    private String name;
+    private int score;
+
 
     public Player(String name) {
         this.name = name;
+        score = 0;
     }
 
     public String getName() {
         return name;
+    }
+
+    public void changeScore(int score) {
+        this.score += score;
+    }
+
+    public int getScore() {
+        return score;
     }
 }

@@ -44,4 +44,32 @@ public class ConverterTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSymboltoMorse() {
+        //Arrange
+        Converter converter = new Converter();
+        String expected = "";
+
+        //Act
+        String actual = converter.toMorse("?");
+
+        //Assert
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testatoMorse() {
+        //Arrange
+        Converter converter = new Converter();
+        String expected = ".-";
+
+        //Act
+        String actual = converter.toMorse("a");
+
+        //Assert
+        assertEquals(expected, actual);
+    }
+
+
+
 }

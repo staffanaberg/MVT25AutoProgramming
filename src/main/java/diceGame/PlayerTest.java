@@ -29,5 +29,18 @@ public class PlayerTest {
 
     }
 
+    @Test
+    public void changeScore() {
+        Player player = new Player("Staffan");
+        int expected = 12;
+
+        player.changeScore(10);
+        player.changeScore(2);
+
+        int actual = player.getScore();
+
+        assertEquals(expected, actual);
+    }
+
 
 }
