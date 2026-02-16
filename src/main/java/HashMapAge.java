@@ -11,17 +11,22 @@ public class HashMapAge {
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<>();
 
-        map.put("A", ".-");
-        map.put("B", "-...");
+        String[] alfabet = {"A", "B"};
+        String[] morse = {".-" , "-..."};
+
+        for(int i=0; i<alfabet.length;i++) {
+            map.put(alfabet[i], morse[i]);
+            map.put( morse[i], alfabet[i]);
+        }
 
         String myText = "AB";
 
         //String[] text = {"A", "A"};
         String[] text = myText.split("");
 
-        for(int i=0;i<text.length;i++) {
-            System.out.println(map.get(text[i]));
-        }
+       // for(int i=0;i<text.length;i++) {
+            System.out.println(map.get("A"));
+       // }
 
 
 /*
