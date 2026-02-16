@@ -42,6 +42,8 @@ Byta plats på första och sista namnet
 
 
         System.out.println("Det här är sparat i min lista:");
+
+
         for(int i=0; i<list.size(); i++) {
             System.out.println(list.get(i));
         }
@@ -64,7 +66,15 @@ Byta plats på första och sista namnet
 
         // 1, 7, 3, 9, 5
         // 5, 7, 3, 9,
+
+
+        // 0, 1, 2, 3, 4
         // 5, 7, 3, 9, 1
+
+        // size = 5
+        // 4 = size - 1 = 5 - 1 = 4
+
+
         //hitta värdet på index 0 och spara det
         String first = list.get(0);
         //String last = list.getLast();
