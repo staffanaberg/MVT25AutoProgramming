@@ -71,5 +71,19 @@ public class ConverterTest {
     }
 
 
+    @Test
+    public void testWrongMorse() {
+        //Arrange
+        Converter converter = new Converter();
+        String expected = "abc";
+
+        //Act
+        String actual = converter.toMorse("null");
+
+        //Assert
+        assertEquals(expected, actual);
+    }
+
+
 
 }

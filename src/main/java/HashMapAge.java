@@ -19,6 +19,7 @@ public class HashMapAge {
             map.put( morse[i], alfabet[i]);
         }
 
+
         String myText = "AB";
 
         //String[] text = {"A", "A"};

@@ -3,6 +3,7 @@ package diceGame;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PlayerTest {
 
@@ -41,6 +42,24 @@ public class PlayerTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void changeScoreAndWin() {
+        Player player = new Player("Staffan");
+        boolean expected = true;
+
+        player.changeScore(10);
+        player.changeScore(20);
+        player.changeScore(20);
+
+        boolean actual = player.isWinner();
+
+        assertEquals(expected, actual);
+
+        //assertTrue(actual);
+    }
+
+
 
 
 }

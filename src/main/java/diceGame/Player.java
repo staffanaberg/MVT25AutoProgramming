@@ -24,4 +24,15 @@ public class Player {
     public int getScore() {
         return score;
     }
+
+    public boolean isWinner() {
+
+        /*if(score>=50) {
+            return true;
+        } else {
+            return false;
+        }*/
+
+        return score>=50;
+    }
 }
